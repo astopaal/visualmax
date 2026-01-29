@@ -101,25 +101,28 @@ export default function Header() {
 
                 {/* Mobile Menu */}
                 <div className={`
-          lg:hidden overflow-hidden transition-all duration-500
-          ${menuOpen ? 'max-h-96 pb-8' : 'max-h-0'}
+          lg:hidden overflow-hidden transition-all duration-300
+          bg-obsidian border-b border-zinc-800
+          ${menuOpen ? 'max-h-80 pb-6' : 'max-h-0'}
         `}>
-                    <nav className="flex flex-col gap-4 pt-4 border-t border-zinc-800">
+                    <nav className="flex flex-col pt-4">
                         {navLinks.map((link) => (
                             <a
                                 key={link.label}
                                 href={link.href}
                                 onClick={() => setMenuOpen(false)}
-                                className="text-lg font-medium text-zinc-400 hover:text-pure-white transition-colors"
+                                className="text-base font-medium text-zinc-400 hover:text-pure-white transition-colors duration-200 py-3 border-b border-zinc-800/50"
                             >
                                 {link.label}
                             </a>
                         ))}
-                        <div className="pt-4 mt-4 border-t border-zinc-800">
-                            <Button variant="primary" href="#demo" className="w-full">
-                                Request Demo
-                            </Button>
-                        </div>
+                        <a
+                            href="#contact"
+                            onClick={() => setMenuOpen(false)}
+                            className="text-base font-medium text-zinc-400 hover:text-pure-white transition-colors duration-200 py-3"
+                        >
+                            Contact
+                        </a>
                     </nav>
                 </div>
             </div>
