@@ -37,9 +37,7 @@ export default function Architecture() {
     ];
 
     return (
-        <section id="architecture" className="section bg-zinc-900 relative overflow-hidden">
-            {/* Grid Background */}
-            <div className="grid-background opacity-20" />
+        <section id="architecture" className="section relative overflow-hidden bg-obsidian/10">
 
             <div className="container relative z-10">
                 <div className="text-center mb-16">

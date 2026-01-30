@@ -43,7 +43,7 @@ export default function Security() {
     ];
 
     return (
-        <section id="security" className="section bg-obsidian relative overflow-hidden">
+        <section id="security" className="section relative overflow-hidden bg-zinc-900/10">
             {/* Background Gradient */}
             <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-signal-blue/5 to-transparent pointer-events-none" />
 

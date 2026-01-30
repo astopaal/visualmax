@@ -4,7 +4,7 @@ import Button from '../ui/Button';
 
 export default function CTA() {
     return (
-        <section id="demo" className="section bg-obsidian relative overflow-hidden">
+        <section id="demo" className="section relative overflow-hidden bg-zinc-900/10">
             {/* Background Elements */}
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,102,255,0.15),transparent_70%)]" />
             <div className="absolute top-0 left-0 right-0 h-px bg-zinc-800" />

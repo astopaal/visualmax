@@ -32,7 +32,7 @@ export default function Statistics() {
     ];
 
     return (
-        <section id="statistics" className="section bg-obsidian relative">
+        <section id="statistics" className="section relative bg-zinc-900/10">
             {/* Background Accent */}
             <div className="absolute top-1/2 left-0 w-full h-px bg-zinc-800" />
             <div className="absolute top-1/2 left-1/4 w-1/2 h-px bg-gradient-to-r from-transparent via-signal-blue/50 to-transparent" />

@@ -12,9 +12,6 @@ export default function Hero() {
 
     return (
         <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
-            {/* Grid Background */}
-            <div className="grid-background" />
-
             {/* Gradient Overlays */}
             <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-signal-blue/5 to-transparent pointer-events-none" />
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-signal-blue/10 blur-[120px] pointer-events-none" />

@@ -35,7 +35,7 @@ export default function Roadmap() {
     ];
 
     return (
-        <section id="roadmap" className="section bg-zinc-900 relative overflow-hidden">
+        <section id="roadmap" className="section relative overflow-hidden bg-obsidian/10">
             {/* Gradient */}
             <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-obsidian to-transparent pointer-events-none" />
 

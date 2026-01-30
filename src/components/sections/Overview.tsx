@@ -4,7 +4,7 @@ import SectionNumber from '../ui/SectionNumber';
 
 export default function Overview() {
     return (
-        <section id="overview" className="section bg-obsidian relative">
+        <section id="overview" className="section relative bg-obsidian/10">
             {/* Top Divider */}
             <div className="absolute top-0 left-0 right-0 h-px bg-zinc-800" />
 
