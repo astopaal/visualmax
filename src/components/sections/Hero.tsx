@@ -60,7 +60,7 @@ export default function Hero() {
                             <p className="caption text-slate mb-4">Trusted by enterprise leaders</p>
                             <div className="flex items-center gap-8 opacity-40">
                                 {/* Placeholder logos - styled as text */}
-                                {['RETAIL CO', 'FINANCE+', 'MEDIA GROUP', 'TECH CORP'].map((name) => (
+                                {['BAYDÖNER', 'GEDİZ', 'AYDEM', 'PENTİ', 'İSHAKBEY', 'EKONOMİ ÜNİ.', 'İZDENİZ'].map((name) => (
                                     <span key={name} className="font-display font-bold text-sm text-zinc-400 tracking-wider">
                                         {name}
                                     </span>
@@ -117,12 +117,6 @@ export default function Hero() {
                         </div>
                     </div>
                 </div>
-            </div>
-
-            {/* Scroll Indicator */}
-            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-fade-in stagger-5" style={{ opacity: 0 }}>
-                <span className="caption text-zinc-500">Scroll</span>
-                <div className="w-px h-12 bg-gradient-to-b from-zinc-500 to-transparent" />
             </div>
         </section>
     );

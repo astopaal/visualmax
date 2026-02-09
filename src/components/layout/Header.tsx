@@ -65,12 +65,6 @@ export default function Header() {
 
                     {/* CTA */}
                     <div className="hidden lg:flex items-center gap-4">
-                        <a
-                            href="#contact"
-                            className="text-sm font-medium text-zinc-400 hover:text-pure-white transition-colors"
-                        >
-                            Contact
-                        </a>
                         <Button variant="primary" href="#demo">
                             Request Demo
                         </Button>
@@ -116,13 +110,7 @@ export default function Header() {
                                 {link.label}
                             </a>
                         ))}
-                        <a
-                            href="#contact"
-                            onClick={() => setMenuOpen(false)}
-                            className="text-base font-medium text-zinc-400 hover:text-pure-white transition-colors duration-200 py-3"
-                        >
-                            Contact
-                        </a>
+
                     </nav>
                 </div>
             </div>

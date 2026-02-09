@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import VantaBackground from "@/components/ui/VantaBackground";
+import AppWrapper from "@/components/layout/AppWrapper";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,6 +26,11 @@ export const metadata: Metadata = {
   description: "Bring your brand to life at every location with a cloud-based, scalable, and secure digital signage management system. Enterprise-grade AWS infrastructure with 99.9% uptime.",
   keywords: ["digital signage", "signage platform", "enterprise signage", "screen management", "content management", "videowall", "AWS cloud"],
   authors: [{ name: "Techmax Technology" }],
+  icons: {
+    icon: "/ic_launcher.png",
+    shortcut: "/ic_launcher.png",
+    apple: "/ic_launcher.png",
+  },
   openGraph: {
     title: "VisualMAX | Next-Generation Digital Signage Platform",
     description: "Command every screen. Enterprise digital signage platform with AWS cloud infrastructure.",
@@ -41,12 +46,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable}`}>
       <body className="antialiased">
-        {/* Vanta.js DOTS Background */}
-        <VantaBackground />
-        {/* Noise Texture Overlay */}
-        <div className="noise" />
-        {children}
+        <AppWrapper>
+          {children}
+        </AppWrapper>
       </body>
     </html>
   );
 }
+
